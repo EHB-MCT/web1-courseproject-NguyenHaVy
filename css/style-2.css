@@ -55,6 +55,9 @@ header nav li {
 header nav li a {
 	color: #ffbf4f;
 	text-decoration: none;
+	transition: background-color 0.6s, transform 0.6s;
+	transition-timing-function: ease-in-out;
+	display: inline-block;
 }
 .button {
 	background-color: #744700;
@@ -62,7 +65,8 @@ header nav li a {
 	border-radius: 30px;
 	text-decoration: none;
 }
-a:hover {
+header nav li a:hover {
 	background-color: #005b96;
 	color: aliceblue;
+	transform: scale(90%);
 }
