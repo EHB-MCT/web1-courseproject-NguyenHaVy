@@ -19,7 +19,7 @@ body {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	display: none;
+	display: grid;
 }
 #grid p {
 	border: 1px solid #000;
@@ -46,8 +46,6 @@ header nav li {
 	padding-left: 10px;
 }
 header nav li a {
-	color: #ffbf4f;
-	text-decoration: none;
 	transition: background-color 0.6s, transform 0.6s;
 	transition-timing-function: ease-in-out;
 	display: inline-block;
@@ -56,6 +54,8 @@ header nav li a {
 	background-color: #744700;
 	padding: 15px 25px;
 	border-radius: 30px;
+	text-decoration: none;
+	color: #ffbf4f;
 	text-decoration: none;
 }
 header nav li a:hover {
@@ -115,18 +115,13 @@ h1 {
 
 	padding: 10px;
 }
-.vaardigheid-2 circle {
-	margin-right: 2px;
-
-	padding: 10px;
-}
 
 .vaardigheid h3 {
 	margin: 0;
 	padding-right: 20px;
 }
 .ict {
-	grid-column: 7/12;
+	grid-column: 2/7;
 }
 .circle {
 	width: 30px;
@@ -162,4 +157,25 @@ h1 {
 .ranking p {
 	margin: 0;
 	padding-right: 270px;
+}
+h3 {
+	font-weight: 550;
+}
+.nav ul li a {
+	transition: background-color 0.6s, transform 0.6s;
+	transition-timing-function: ease-in-out;
+	display: inline-block;
+}
+.nav li a:hover {
+	background-color: #005b96;
+	color: aliceblue;
+	transform: scale(90%);
+}
+.contact {
+	margin-top: 200px;
+	border-radius: 20px;
+	grid-column: 7/12;
+}
+.contact-img {
+	grid-column: 1/6;
 }
