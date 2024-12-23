@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap");
+@media screen and (max-width: 768px) {
+	body {
+		background-color: #005b96;
+	}
+}
 
 body {
 	background-color: #f6af48;
@@ -116,4 +121,15 @@ a:hover {
 	padding: 15px 25px;
 	border-radius: 30px;
 	text-decoration: none;
+}
+.hamburger {
+	display: block;
+	cursor: pointer;
+	font-size: 30px;
+	color: #744700;
+	margin: 20px;
+}
+
+.hamburger.active + nav ul {
+	display: block;
 }
